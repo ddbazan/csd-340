@@ -7,5 +7,5 @@
 		<li>Destiny Bazan</li>
 	</ul>
  </body>
-</html># csd-340
-Development with HTML
+</html>
+# csd-340 Development with HTML

@@ -1,0 +1,32 @@
+/* Adding Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+	font-family: 'Open Sans', sans-serif; /* Applying Google Font */
+}
+
+#container {
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+	background-color: #F8B3CA; /* Pastel purple background */
+	color: #2E2439; /* Dark gray for text */
+	border: 1px solid #FFDCDB; /* Soft pink border */
+	padding: 10px;
+}
+
+a {
+	color: #78C5DC; /* Darker pastel blue */
+	text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+	color: #FFAE42; /* Soft pastel yellow for hover state */
+}
+
+a:visited {
+	color: #B57EDC; /* Pastel lavender for visited links */
+}

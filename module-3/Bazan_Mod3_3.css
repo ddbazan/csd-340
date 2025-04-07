@@ -4,14 +4,16 @@ h1 {
 }
 
 /* Style for side-by-side divs */
-div {
-    width: 45%;
+.left-div, .right-div {
+    width: 45%; /* Set each div to 45% */
 }
 
 /* Style for the last div */
-#container > div:last-child {
-    width: 100%;
-    margin-top: 60%;
+.back-div {
+    width: 100%; /* Set width to 100% */
+    margin-top: 60%; /* Margin on top */
+    float: right; /* Float to the right for positioning */
+    margin-bottom: 20px; /* Bottom margin */
 }
 
 /* Set weight of h3 tags */
@@ -41,10 +43,4 @@ ul {
 /* Hover effect on links */
 a:hover {
     text-decoration: underline; /* Show underline on hover */
-}
-
-/* Float the last div to the right */
-#container > div:last-child {
-    float: right;
-    margin-bottom: 20px;
 }

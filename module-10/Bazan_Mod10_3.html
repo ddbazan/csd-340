@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .image-container {
+            margin-top: 30px;
+        }
+        .image-container img {
+            width: 150px;
+            height: auto;
+            margin: 10px;
+            cursor: pointer; 
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        .image-container img:hover {
+            border-color: blue;
+        }
+        #output-area {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            min-height: 50px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+    <div class="image-container">
+        <!-- Replace src with your image paths -->
+        <img src="cave_01.jpg" alt="Image 1" onclick="handleImageClick('image1')">
+        <img src="cave_02.jpg" alt="Image 2" onclick="handleImageClick('image2')">
+        <img src="moon_01.jpg" alt="Image 3" onclick="handleImageClick('image3')">
+        <!-- Add more images as needed -->
+    </div>
+
+    <div id="output-area">
+        <!-- This area will be updated by JavaScript -->
+        Click an image above to see the result.
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

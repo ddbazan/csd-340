@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <!-- Input box for user to enter items -->
+    <input type="text" id="entryText" placeholder="Enter item" />
+
+    <!-- Buttons for actions -->
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLast()">Delete Last Entry</button>
+    <button onclick="displayItems()">Display</button>
+
+    <script>
+        const itemsArray = [];
+
+        function addItem() {
+            const inputField = document.getElementById('entryText');
+            const newItem = inputField.value.trim();
+            if (newItem === "") {
+                alert("Please enter a value before adding.");
+                return;
+            }
+            itemsArray.push(newItem);
+            alert(`Added: "${newItem}" at position ${itemsArray.length}`);
+            inputField.value = ""; // Clear input after adding
+        }
+
+        function deleteLast() {
+            if (itemsArray.length === 0) {
+                alert("No items to delete.");
+                return;
+            }
+            const removedItem = itemsArray.pop();
+            alert(`Deleted: "${removedItem}"`);
+        }
+
+        function displayItems() {
+            if (itemsArray.length === 0) {
+                alert("No items to display.");
+                return;
+            }
+            alert("Current list:\n" + itemsArray.join("\n"));
+        }
+    </script>
+</body>
+</html>
